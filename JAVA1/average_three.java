@@ -7,8 +7,9 @@ public class average_three {
         int a=sc.nextInt();
         int b=sc.nextInt();
         int c=sc.nextInt();
+        sc.close();
         int average=(a+b+c)/3;
         System.out.print("Average is:"+average);
-        sc.close();
+        
     }
 }

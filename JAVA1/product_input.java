@@ -6,8 +6,9 @@ public class product_input {
         Scanner sc=new Scanner(System.in);
         int a=sc.nextInt();
         int b=sc.nextInt();
+         sc.close();
         int product=a*b;
         System.out.print(product);
-        sc.close();
+       
     }
 }

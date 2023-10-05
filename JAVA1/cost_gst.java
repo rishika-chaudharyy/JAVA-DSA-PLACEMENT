@@ -7,11 +7,12 @@ public class cost_gst {
         float pencil=sc.nextFloat();
         float pen=sc.nextFloat();
         float eraser=sc.nextFloat();
+          sc.close();
         float total=pencil+pen+eraser;
         System.out.println("Bill is:"+total);
         //Bill with gst
         float gst=total+(0.18f*total);
         System.out.print("Bill with gst:"+gst);
-        sc.close();
+      
     }
 }

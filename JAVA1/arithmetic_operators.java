@@ -6,6 +6,7 @@ public class arithmetic_operators{
         Scanner sc=new Scanner(System.in);
         int a=sc.nextInt();
         int b=sc.nextInt();
+         sc.close();
         System.out.println("Sum is :" +a+b);
         System.out.println("Difference is :" +(a-b));
         System.out.println("Product is :" +a*b);
@@ -21,7 +22,7 @@ public class arithmetic_operators{
         ++b;
         System.out.println(b);
         System.out.println(a);
-        sc.close();
+       
 
     }
 }

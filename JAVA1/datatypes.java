@@ -9,7 +9,7 @@ public class datatypes {
         float e = 9; //Will give 9.0
         double f = 90.5367289098716892; //For bigger decimal numbers
         char g = 'a'; //Can only have one character 
-        boolean h = true; //Can only print ture and false
+        boolean h = true; //Can only print true and false
         String i="Rishika";
         System.out.println(a);
         System.out.println(b);

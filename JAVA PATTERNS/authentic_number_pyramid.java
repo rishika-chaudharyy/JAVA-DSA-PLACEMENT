@@ -5,7 +5,7 @@ public class authentic_number_pyramid {
         System.out.println("Enter rows");
         int n=sc.nextInt();
         int nsp=n-1;
-        
+         
         for(int i=1;i<=n;i++){
             int a=i-1;
               for(int j=1;j<=nsp;j++){

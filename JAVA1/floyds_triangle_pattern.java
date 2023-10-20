@@ -1,3 +1,4 @@
+//pattern
 public class floyds_triangle_pattern {
     public static void pattern(int n){
         int a=1;

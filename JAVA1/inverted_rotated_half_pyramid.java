@@ -1,4 +1,4 @@
-
+//pattern
 public class inverted_rotated_half_pyramid {
     public static void pattern(int n,int m){
         int nst=1;

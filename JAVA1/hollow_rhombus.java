@@ -1,3 +1,4 @@
+//pattern
 import java.util.*;
 public class hollow_rhombus {
     public static void main(String args[]){

@@ -1,4 +1,4 @@
-
+//pattern
 public class hollow_rectangle{
     public static void pattern(int n,int m){
 for(int i=1;i<=n;i++){

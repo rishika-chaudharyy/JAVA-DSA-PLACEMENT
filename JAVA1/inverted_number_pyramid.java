@@ -1,3 +1,4 @@
+//pattern
 public class inverted_number_pyramid {
     public static void pattern(int n){
         for(int i=1;i<=n;i++){

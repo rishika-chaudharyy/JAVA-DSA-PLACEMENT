@@ -1,3 +1,4 @@
+//pattern
 import java.util.*;
 public class number_pyramid_pattern {
     public static void main(String args[]){

@@ -1,3 +1,4 @@
+//pattern
 import java.util.*;
 public class palindromic_number_pattern {
     public static void main(String[] args) {

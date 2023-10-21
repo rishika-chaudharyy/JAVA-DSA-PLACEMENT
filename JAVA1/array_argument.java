@@ -1,20 +1,21 @@
-//Write a program to pass array as an argument
-public class array_argument {
-    public static void updation(int array[], int value) {
-        value = 10;
-        for (int i = 0; i < array.length; i++) {
-            array[i] = array[i] + 1;
+//Write a program to pass an array as an argument
+import java.util.*;
+public class array_argument{
+    public static void argument(int array[],int value){
+        value=5;
+        for(int i=0;i<array.length;i++){
+            array[i]=array[i]+1;
         }
     }
-
-    public static void main(String args[]) {
-        int array[] = { 97, 98, 99 };
-        int value = 120;
-        updation(array, value);
-        System.out.println(value); // This will print 120 because 'value' is not modified in the 'updation' method
-
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + " "); // This will print the modified values of the 'array' [98 99 100]
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        int value=10;
+        int array[]={1,2,3,4,5};
+        argument(array,value);
+        System.out.println(value);//This is call by value in which original value of does not argument changes
+        for(int i=0;i<array.length;i++){
+            System.out.print(array[i]+" ");//This is call by reference in which original value of argument changes
         }
+        sc.close();
     }
 }

@@ -2,7 +2,7 @@
 public class array_marks {
     public static void main(String args[]){
         int marks[]={99,98,100};
-        int percentage=((marks[0]+marks[1]+marks[2])/3);
+        int percentage=((marks[0]+marks[1]+marks[2])/marks.length);
         System.out.println("Percentage is "+percentage+"%");
     }
 }

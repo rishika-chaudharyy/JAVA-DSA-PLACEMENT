@@ -1,3 +1,4 @@
+//Write a program to print the possible sub arrays
 public class subarrays {
     public static void sub(int array[]){
         int ts=0;
@@ -15,7 +16,7 @@ public class subarrays {
         System.out.println("Total subarrays are: "+ts);
     }
     public static void main(String args[]){
-        int array[]={1,2,3,4,5,6,7,8,9,10};
+        int array[]={1,2,3,4,5};
         sub(array);
     }
 }

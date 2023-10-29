@@ -22,7 +22,7 @@ public class subarray_sum_prefix{
         int prefix[]=new int[array.length];
         prefix[0]=array[0];
         for(int i=1;i<prefix.length;i++){
-        prefix[i]=prefix[i-1]=array[i];
+        prefix[i]=prefix[i-1]+array[i];
         }
 
         for(int i=0;i<array.length;i++){

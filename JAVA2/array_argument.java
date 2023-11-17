@@ -20,7 +20,7 @@ public class array_argument {
     }
     argument(array,value);
     for(int i=0;i<array.length;i++){//call by reference/changes
-            System.out.print(array[i]+" ");           
+            System.out.println(array[i]+" ");           
         }
 System.out.println(value);//call by value/no change
 sc.close();

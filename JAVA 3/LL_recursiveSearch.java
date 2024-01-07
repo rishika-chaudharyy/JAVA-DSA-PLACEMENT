@@ -1,6 +1,8 @@
-//Write a program to remove first and also remove last and print the size too
-public class LL_removeFirstLast {
-    
+//Write a program to search for a key recursively
+
+import org.w3c.dom.Node;
+
+public class LL_recursiveSearch {
     public static class Node {
         int data;
         Node next;
@@ -104,8 +106,38 @@ public class LL_removeFirstLast {
         size--;
         return val;
     }
+    public int search(int key){
+        Node temp=head;
+        int i=0;
+
+        while(temp!=null){
+            if(temp.data==key){
+                return i;
+            }
+            temp=temp.next;
+            i++;
+        }
+        return -1;
+    }
+    public int helper(Node head, int key) {
+    if (head == null) {
+        return -1;
+    }
+    if (head.data == key) {
+        return 0;
+    }
+    int idx = helper(head.next, key); // Missing semicolon here
+    if (idx == -1) {
+        return -1;
+    }
+    return idx + 1;
+}
+
+public int recSearch(int key) {
+    return helper(head, key); // Moved this method outside of the main method and fixed formatting
+}
     public static void main(String args[]) {
-        LL_removeFirstLast ll = new LL_removeFirstLast();
+        LL_recursiveSearch ll = new LL_recursiveSearch();
         ll.addFirst(1);
         ll.addFirst(2);
         ll.addFirst(3);
@@ -120,7 +152,15 @@ public class LL_removeFirstLast {
         ll.removeLast();
         ll.print();
         System.out.println(ll.size);
+        System.out.println(ll.search(3));
+        System.out.println(ll.search(10));
+        System.out.println(ll.recSearch(3));
+        System.out.println(ll.recSearch(10));
     }
 }
 
+
+
+
+   
 

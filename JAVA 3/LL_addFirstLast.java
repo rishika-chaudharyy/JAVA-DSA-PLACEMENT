@@ -38,7 +38,7 @@ public class LL_addFirstLast{
         }
 
         //tail next=new node
-        tail,next=newnode;
+        tail.next=newnode;
 
         //tail=newnode
         tail=newnode;

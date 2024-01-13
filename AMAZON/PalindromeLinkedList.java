@@ -1,6 +1,6 @@
-//Write a program to check if a linkedlist is palindrome or not
+//Given the head of a singly linked list , return true if it is palindrome else false
 
-public class LL_palindrome {
+public class PalindromeLinkedList {
 
     public static class Node {
         int data;
@@ -156,6 +156,7 @@ public void delete(int n){
     }
     prev.next=prev.next.next;
     return;
+
 }
 
 public Node findMid(Node head){
@@ -174,7 +175,7 @@ public boolean checkPalindrome(){
         return true;
     }
     //step 1
-    //find midnode
+    //find 
     
     Node midnode=findMid(head);
 
@@ -205,27 +206,11 @@ public boolean checkPalindrome(){
 
 }
     public static void main(String args[]) {
-        LL_palindrome ll = new LL_palindrome();
+        PalindromeLinkedList ll = new PalindromeLinkedList();
         ll.addFirst(1);
         ll.addFirst(2);
-        ll.addFirst(3);
-        ll.addLast(4);
-        ll.addLast(6);
-        ll.addLast(5);
-        ll.addMiddle(2,9);
-
-        ll.print(); // Add this line to print the linked list
-        ll.removeFirst();
-        ll.print();
-        ll.removeLast();
-        ll.print();
-        System.out.println(ll.size);
-        System.out.println(ll.search(3));
-        System.out.println(ll.search(10));
-        System.out.println(ll.recSearch(3));
-        System.out.println(ll.recSearch(10));
-        ll.delete(3);
-        ll.print();
+        ll.addFirst(2);
+        ll.addFirst(1);
         System.out.println(ll.checkPalindrome());
     }
 }

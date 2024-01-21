@@ -1,4 +1,4 @@
-//Write a program for minimum absolut difference
+//Write a program for minimum absolute difference
 
 import java.util.*;
 
